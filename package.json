@@ -1,0 +1,26 @@
+{
+  "name": "horizon",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.2.3"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
