@@ -13,9 +13,9 @@ const Nav: React.FC = () => {
       </div>
 
       <nav className="flex items-center justify-center space-x-8">
-        <span className="text-xl font-bold hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/")}>White paper</span>
-        <span className="text-xl font-bold hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/deposit")}>Deposit</span>
-        <span className="text-xl font-bold hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/withdraw")}>Withdraw</span>
+        <span className="text-xl font-bold text-[#FFF] hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/")}>White paper</span>
+        <span className="text-xl font-bold text-[#FFF] hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/deposit")}>Deposit</span>
+        <span className="text-xl font-bold text-[#FFF] hover:text-[#0E76FD] cursor-pointer" onClick={() => navigate("/withdraw")}>Withdraw</span>
       </nav>
 
       {/* Navigation - PC */}

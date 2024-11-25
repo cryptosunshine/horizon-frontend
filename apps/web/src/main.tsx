@@ -5,7 +5,7 @@ import "./index.css";
 import AppRoutes from "./layout/router";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
-import { mainnet, sepolia } from "wagmi/chains";
+import { confluxESpace, confluxESpaceTestnet } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 const config = getDefaultConfig({
   appName: "Horizon",
   projectId: "13242c87d050f439f41dd87a34ec7797",
-  chains: [mainnet, sepolia],
+  chains: [confluxESpace, confluxESpaceTestnet],
   ssr: false,
 });
 
